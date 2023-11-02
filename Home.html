@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="styles/deneth_h.css">
+    </head>
+    <body>
+		<!-- <script src="js/home.js"></script> -->
+        <div id="top">
+            <div class="logo">
+                <img src="images\logo.png" alt="" width="150" height="150">
+            </div>
+            <div class="sg">
+                <img src="images\prof.png" alt="" width="60" height="50">
+                
+                <div id="d">
+                    <button id="loginButton" type="submit" style="width: 60px; height: 25px; border-radius: 5px; cursor: pointer; border: 1px solid black;">Login</button>
+					<button id="signupButton" type="submit" style="width: 60px; height: 25px; border-radius: 5px; cursor: pointer; border: 1px solid black;">Signup</button>
+				</div>
+            </div>
+			
+			<script>
+				const loginButton = document.querySelector('#loginButton');
+				const signupButton = document.querySelector('#signupButton');
+			
+				loginButton.addEventListener('click', function() {
+					window.location.href = '../login.html'; // Corrected filename and path
+				});
+			
+				signupButton.addEventListener('click', function() {
+					window.location.href = '../Registration.html'; // Corrected path
+				});
+			</script>
+
+               <h1 class="h1">FIREJET</h1>
+               <h2 class="h2">Car Rental Service</h2>
+            
+        </div>
+    
+        <div class="topnav">
+            <div>
+                <li class="list"><a href="Home.html">Home</a></li>
+                <li class="list"><a href="fleet.html">Vehicle Fleet</a></li>
+                <li class="list"><a href="Servicepage.html">Services</a></li>
+                <li class="list"><a href="https://www.google.lk/">Rates</a></li>
+                <li class="list"><a href="contactus.html">Contact Us</a></li>
+            </div>
+            <div class="search-container">
+                <!--    <form action="/action_page.php">-->
+                    <input style="border: none;" type="text" placeholder="Search.." name="search">
+                        <div class="search-container-button">
+                            <button style="width: 40px; height: 40px; border: none; cursor: pointer;" type="submit"><i class="fa fa-search"></i></button>
+                        </div>
+                    <!--</form>-->    
+                </div>
+        </div>
+		<div class="dropd">
+		<ul>	
+		  <li class="dropdown">
+			<a href="" class="dropbtn">Vehicle Type</a>
+			<div class="dropdown-content">
+			  <a href="#">Car</a>
+			  <a href="#">van</a>
+			  <a href="#">Bus</a>
+			  <a href="#">SUV</a>
+			  <a href="#">All Vehicles</a>
+			</div>
+		  </li>
+		  <li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn">Driving Type</a>
+			<div class="dropdown-content">
+			  <a href="#">Self Drive</a>
+			  <a href="#">Tours</a>
+			  <a href="#">Weddings & Events</a>
+			  <a href="#">Airport Drive</a>
+			</div>
+		  </li>
+		  <li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn">Pickup Location</a>
+			<div class="dropdown-content">
+			  <a href="#">Bandaranayake International Airport, Katunayake</a>
+			  <a href="#">Firejet Main Office, Colombo 1</a>
+			  <a href="#">Other</a>
+			</div>
+		  </li>
+		  <li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn">Pickup Date</a>
+			<div class="dropdown-content">
+			  <a href="#">Link 1</a>
+			  <a href="#">Link 2</a>
+			  <a href="#">Link 3</a>
+			</div>
+		  </li>
+		  <li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn">Pickup Time</a>
+			<div class="dropdown-content">
+			  <a href="#">Link 1</a>
+			  <a href="#">Link 2</a>
+			  <a href="#">Link 3</a>
+			</div>
+		  </li>
+		</ul>
+		</div>
+       <hr id = "hr3">
+		<div class = "bx">
+			<div class = "roww">
+				<h1 style = "text-align: center; font-style: bold;">VEHICLE FLEET</h1> <br>
+				<button type="button" class = "buttonn1">MORE DETAILS</button>
+			</div>
+			<div class = "roww">
+				<p style = "font-size: 18px; margin-right: 100px; ">We offer a wide range of options from economy to luxury. The fleet consists of cars, sports utility, and 4WD vehicles, vans and buses.</p>
+			</div>
+			
+		</div>
+		
+		<div class="bx">	
+			<div class = "sndbx">
+				
+				<img src="images/luxurycar.jpg" alt="LUXURY CAR" width="315" height="167">
+				<h3 align = "center"><b>LUXURY CARS</b></h3>
+			</div>
+				 
+			<div class = "sndbx">
+				
+				<img src="images\premium.jpg" alt="Trulli" width="315" height="167">
+				<h3 align = "center"><b>PREMIUM CARS</b></h3>
+			</div>
+			<div class = "sndbx">
+				
+				<img src="images\genaral.jpg" alt="LUXURY CAR" width="315" height="167">
+				<h3 align = "center"><b>GENERAL CARS</b></h3>
+			</div>
+			<div class = "sndbx">
+				
+				<img src="images\van.jpg" alt="LUXURY CAR" width="315" height="167">
+				<h3 align = "center"><b>BUSES, VANS AND MPV</b></h3>
+			</div>
+		</div>
+		
+		<hr id = "hr3">
+		<div class="bx">	
+			<div class = "sndbx">
+				
+				<img src="images\self-drive.jpg" alt="SELF DRIVE" width="315" height="266">
+				<h3 align = "center"><b>SELF DRIVE</b></h3>
+			</div>
+				 
+			<div class = "sndbx">
+				
+				<img src="images\chauffuer-driven.jpg" alt="WITH DRIVER" width="315" height="266">
+				<h3 align = "center"><b>WITH DRIVER</b></h3>
+			</div>
+			<div class = "sndbx">
+				
+				<img src="images\airport.jpg" alt="AIRPORT" width="315" height="266">
+				<h3 align = "center"><b>AIRPORT</b></h3>
+			</div>
+			<div class = "roww">
+			<br>
+				<h1 style = "text-align: center; font-style: bold;">SERVICES</h1> <br>
+				<p style = "font-size: 18px; margin-left: 20px; margin-right: 20px;">Our services are tailor-made to meet any type of transportation service you require.</p> <br><br><br>
+				<button type="button"  class = "buttonn2">MORE DETAILS</button>
+			</div>
+		</div>
+		<hr id = "hr3">
+		<div class = "bx">
+			<div class = "roww">
+				<img src="images\wedding.jpg" alt="wedding" width="600" height="344">
+			</div>
+			<div class = "roww">
+				<h1 style = "text-align: center; font-style: bold;">WEDDINGS AND EVENTS</h1> <br>
+				<p style = "font-size: 18px; margin-left: 50px; margin-right: 50px;">Style and class are what we promise for your special occasions. Choose from our extensive fleet of luxury vehicles and make your day a truly unforgettable one</p>
+				<br>
+				<button type="button" class = "buttonn1">MORE DETAILS</button>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+    </body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta charset="UTF-8">
+     <link rel="stylesheet" href="Styles/reserve.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Reservation Form</title>
+   </head>
+<body>
+	
+	<div class="container">
+    <div class="title">Reservation Form</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details1">
+		
+	
+          <div class="input-box">
+            <span class="details">Pickup Location*</span>
+            <select id="pickup" required>
+				<option value="0">Select one : </option>
+				<option value="1">Malabe</option>
+				<option value="2">Colombo</option>
+				<option value="3">Gampaha</option>
+				<option value="4">Kalutara</option>
+				<option value="5">Jayawardanapura</option>
+				<option value="6">Dehiwala</option>
+				<option value="7">Nugegoda</option>
+				<option value="8">Pettah</option>
+				<option value="9">Katunayaka</option>
+				<option value="10">Kurunegala</option>
+				<option value="11">Kandy</option>
+				<option value="12">Galle</option>
+				<option value="13">Matara</option>
+				<option value="14">Kaduwela</option>
+				<option value="15">Maharagama</option>
+			  </select>
+          </div>
+		  
+		  
+		
+		  
+		  <div class="input-box">
+            <span class="details">Dropoff Location*</span>
+            <select id="dropoff" required>
+				<option value="0">Select one : </option>
+				<option value="1">Malabe</option>
+				<option value="2">Colombo</option>
+				<option value="3">Gampaha</option>
+				<option value="4">Kalutara</option>
+				<option value="5">Jayawardanapura</option>
+				<option value="6">Dehiwala</option>
+				<option value="7">Nugegoda</option>
+				<option value="8">Pettah</option>
+				<option value="9">Katunayaka</option>
+				<option value="10">Kurunegala</option>
+				<option value="11">Kandy</option>
+				<option value="12">Panaduara</option>
+				<option value="13">Matara</option>
+				<option value="14">Kaduwela</option>
+				<option value="15">Maharagama</option>
+			  </select>
+          </div>
+		  
+		  
+		  <div class="input-box">
+            <span class="details">Service Type*</span>
+            <select required>
+				<option value="0">Select one : </option>
+				<option value="1">Economy(Passengers: 4 , Bags: 2)</option>
+				<option value="2">Compact(Passengers: 2 , Bags: 2)</option>
+				<option value="3">Full-size / Premium(Passengers: 5 , Bags: 4)</option>
+				<option value="4">Intermediate / Mid-size / Standard(Passengers: 5 , Bags: 3-4)</option>
+			</select>
+          </div>
+		  
+		  
+		  
+		  <div class="input-box">
+            <span class="details">Passengers*</span>
+            <select required>
+				<option value="0">Select Number : </option>
+				<option value="1">2</option>
+				<option value="2">3</option>
+				<option value="3">4</option>
+				<option value="4">5</option>
+				
+			</select>
+          </div>
+		    
+		</div>
+		
+	
+		
+		<div class="user-details2">
+          <div class="input-box">
+            <span class="details">Vehicle Type*</span>
+            <select required>
+				<option value="0">Select car : </option>
+				<option value="1">Audi</option>
+				<option value="2">BMW</option>
+				<option value="3">Citroen</option>
+				<option value="4">Ford</option>
+				<option value="5">Honda</option>
+				<option value="6">Jaguar</option>
+				<option value="7">Land Rover</option>
+				<option value="8">Mercedes</option>
+				<option value="9">Mini</option>
+				<option value="10">Nissan</option>
+				<option value="11">Toyota</option>
+				<option value="12">Volvo</option>
+			</select>
+          </div>
+		</div>
+		
+		
+		<div class="user-details3">
+          <div class="input-box">
+            <span class="details">Pickup Date*</span>
+            <input type="date" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Pickup Time*</span>
+            <input type="time" required>
+          </div>
+		  <div class="input-box">
+            <span class="details">Return Date*</span>
+            <input type="date" required>
+          </div>
+		  <div class="input-box">
+            <span class="details">Dropoff Time*</span>
+            <input type="time" required>
+          </div>
+		</div>
+		
+		
+		<div class="user-details4">
+          <div class="input-box">
+            <span class="details">Mention Pickup & Dropoff Addresses with Zip Code</span>
+				<textarea name="comment" >
+				
+				</textarea>
+          </div>
+		</div>
+		
+		<p1> *Required Fields </p1>
+		
+		
+        
+        <div class="button" align="center">
+            <input onclick="validateReservation(event)" type="submit" value="Submit">
+		    <input onclick="resetForm()" type="reset" value="Reset">
+        </div>
+			
+		
+		
+		
+		
+		<footer>
+			<p>&copy; 2023 Firejet Car Rental Service. All rights reserved.</p>
+		</footer>
+		
+	  </form>
+		
+      
+    </div>
+  </div>
+  <script src="js/reservation.js"></script>
+</body>
+</html>

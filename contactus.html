@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles/userstyles.css">
+    <link rel="stylesheet" href="styles/asjadcu.css" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
+
+  <body>
+    <main>
+      <div id="top">
+        <div class="logo">
+          <img src="images/logo.png" alt="" width="150" height="150" />
+        </div>
+        <div class="sg">
+          <img src="images\prof.png" alt="" width="60" height="50">
+          
+          <div id="d">
+              <button id="loginButton" type="submit" style="width: 60px; height: 25px; border-radius: 5px; cursor: pointer; border: 1px solid black;">Login</button>
+              <button id="signupButton" type="submit" style="width: 60px; height: 25px; border-radius: 5px; cursor: pointer; border: 1px solid black;">Signup</button>
+          </div>
+        </div>
+
+            <script>
+              const loginButton = document.querySelector('#loginButton');
+              const signupButton = document.querySelector('#signupButton');
+
+              loginButton.addEventListener('click', function() {
+                window.location.href = '../login.html'; // Corrected filename and path
+              });
+
+              signupButton.addEventListener('click', function() {
+                window.location.href = '../Registration.html'; // Corrected path
+              });
+            </script>
+
+        <h1 class="h1">FIREJET</h1>
+        <h2 class="h2">Car Rental Service</h2>
+
+        
+      </div>
+
+
+      <div class="topnav">
+        <div>
+          <li class="list"><a href="Home.html">Home</a></li>
+          <li class="list">
+            <a href="fleet.html">Vehicle Fleet</a>
+          </li>
+          <li class="list"><a href="Servicepage.html">Services</a></li>
+          <li class="list"><a href="https://www.google.lk/">Rates</a></li>
+          <li class="list"><a href="contactus.html">Contact Us</a></li>
+        </div>
+            <div class="search-container">
+            <!--    <form action="/action_page.php">-->
+                <input style="border: none;" type="text" placeholder="Search.." name="search">
+                    <div class="search-container-button">
+                        <button style="width: 40px; height: 40px; border: none; cursor: pointer;" type="submit"><i class="fa fa-search"></i></button>
+                    </div>
+        </div>
+      </div>
+      <div class="conatiner-fixed">
+        <h3>Contact Us XXX Vehicle Rental</h3>
+        <div class="pagenav service-nav">
+          <span>Home</span>
+          <i class="fa-solid fa-arrow-right"></i>
+          <span>Contact us</span>
+        </div>
+        <hr id="hr1" class="hr1-service" />
+        <div class="d-flex-service" style="margin-top: 50px">
+          <div class="col-3">
+            <div class="box-contact" style="padding-right: 100px">
+              <h3 style="text-decoration: underline">Contact Information</h3>
+              <div class="col-01">
+                <h4 style="margin-top: 0px; font-size: 20px">Address</h4>
+                <p style="margin: 0 0 10px">
+                  Robert Robertson, 1234 NW Bobcat Lane, St. Robert, MO
+                  65584-5678
+                </p>
+              </div>
+              <div class="col-02">
+                <h4 style="margin-top: 0px; font-size: 20px">Phone</h4>
+                <p style="margin: 0 0 10px">65584-5678</p>
+                <p style="margin: 0 0 10px">65584-5678</p>
+              </div>
+              <div class="col-03">
+                <h4 style="margin-top: 0px; font-size: 20px">Email</h4>
+                <p style="margin: 0 0 10px">admin@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <form>
+              <div class="box-contact">
+                <div class="row-01 conatct-row">
+                  <input
+                    class="contact-input"
+                    style="width: 40%"
+                    placeholder="First Name"
+                  />
+                  <input
+                    class="contact-input"
+                    style="width: 100%"
+                    placeholder="Last Name"
+                  />
+                </div>
+                <div class="row-02 conatct-row">
+                  <input
+                    class="contact-input"
+                    style="width: 40%"
+                    placeholder="Area Code"
+                  />
+                  <span style="margin-right: 5px"><b>-</b></span>
+                  <input
+                    class="contact-input"
+                    style="width: 100%"
+                    placeholder="Phone Number"
+                  />
+                </div>
+                <div class="row-03 conatct-row">
+                  <input
+                    class="contact-input"
+                    style="width: 100%"
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="row-03 conatct-row">
+                  <textarea
+                    style="width: 100%"
+                    placeholder="Your Message Here"
+                    rows="6"
+                  ></textarea>
+                </div>
+                <div>
+                  <div
+                    class="g-recaptcha"
+                    data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                  ></div>
+                </div>
+                <div style="margin-top: 20px">
+                  <button
+                    class="contact-button"
+                    style="background-color: blueviolet"
+                  >
+                    SEND
+                  </button>
+                  <button
+                    class="contact-button"
+                    style="background-color: #7f7f7f"
+                  >
+                    Reset
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-3">
+            <div class="box-contact" style="display: flex; justify-content: end;">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11200.675829730526!2d-75.6876061!3d45.42609535!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce04ff4fe494ef%3A0x26bb54f60c29f6e!2sParliament+Hill!5e0!3m2!1sen!2sca!4v1528808935681"
+                width="80%"
+                height="275px"
+                frameborder="0"
+                style="border: 0"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottomFooter">
+        <div>All copyrights reserved by FIREJET &#169; 2023</div>
+        <div>Term and conditions</div>
+        <div></div>
+      </div>
+    </main>
+  </body>
+</html>
