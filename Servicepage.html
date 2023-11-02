@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Services</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/asjadcu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <main>
+        <div id="top">
+            <div class="logo">
+                <img src="images/logo.png" alt="" width="150" height="150">
+            </div>
+            <div class="sg">
+                <img src="images\prof.png" alt="" width="60" height="50">
+                
+                <div id="d">
+                    <button id="loginButton" type="submit" style="width: 60px; height: 25px; border-radius: 5px; cursor: pointer; border: 1px solid black;">Login</button>
+					<button id="signupButton" type="submit" style="width: 60px; height: 25px; border-radius: 5px; cursor: pointer; border: 1px solid black;">Signup</button>
+				</div>
+            </div>
+			
+			<script>
+				const loginButton = document.querySelector('#loginButton');
+				const signupButton = document.querySelector('#signupButton');
+			
+				loginButton.addEventListener('click', function() {
+					window.location.href = '../login.html'; // Corrected filename and path
+				});
+			
+				signupButton.addEventListener('click', function() {
+					window.location.href = '../Registration.html'; // Corrected path
+				});
+			</script>
+
+            <h1 class="h1">FIREJET</h1>
+            <h2 class="h2">Car Rental Service</h2>
+
+        </div>
+        <div class="topnav">
+            <div>
+                <li class="list"><a href="Home.html">Home</a></li>
+                <li class="list"><a href="fleet.html">Vehicle Fleet</a></li>
+                <li class="list"><a href="Servicepage.html">Services</a></li>
+                <li class="list"><a href="https://www.google.lk/">Rates</a></li>
+                <li class="list"><a href="contactus.html">Contact Us</a></li>
+            </div>
+            <div class="search-container">
+                <!--    <form action="/action_page.php">-->
+                    <input style="border: none;" type="text" placeholder="Search.." name="search">
+                        <div class="search-container-button">
+                            <button style="width: 40px; height: 40px; border: none; cursor: pointer;" type="submit"><i class="fa fa-search"></i></button>
+                        </div>
+            </div>
+        </div>
+        <div class="conatiner-fixed">
+            <h3>Services</h3>
+            <div class="pagenav service-nav">
+                <span>Home</span>
+                <i class="fa-solid fa-arrow-right"></i>
+                <span>Services</span>
+            </div>
+            <hr id="hr1" class="hr1-service">
+            <div class="deciption-text">
+                Malkey Rent A Car offers a wide range of transportation services on chauffeur driven or self drive basis
+                and
+                is considered a popular choice for a cab service in Colombo, Sri Lanka.
+                Be it corporate transport, a tour around Sri Lanka, a wedding or any special occasion, we offer a smooth
+                and
+                uninterrupted service, tailor-made to your satisfaction.
+            </div>
+            <div class="d-flex-service">
+                <div class="col-3">
+                    <div class="lsdvs">
+                        <span class="border-block-1" style="width: 250px;"></span>
+                        <span class="border-block-2"></span>
+                        <h7 id="h7" class="service-title"
+                            style="font-size: 20px; font-family: Arial, Helvetica, sans-serif;">
+                            Self Drive
+                        </h7>
+                        <div>
+                            <img class="service-card-img" src="images/SD.jpg" alt="" width="200px" height="150px">
+                            <div>
+                                A wide range of self drive cars in Sri Lanka from economical to luxury on daily, weekly
+                                and
+                                monthly
+                                terms
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="lsdvs">
+                        <span class="border-block-1" style="width: 165px;"></span>
+                        <span class="border-block-2"></span>
+                        <h7 id="h7" class="service-title"
+                            style="font-size: 20px; font-family: Arial, Helvetica, sans-serif;">
+                            Tours / Chauffeur
+                        </h7>
+                        <div>
+                            <img class="service-card-img" src="images/CFD.jpg" alt="" width="200px" height="150px">
+                            <div>
+                                A unique range of chauffeur driven cars that exceedingly surpass the norm
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="lsdvs">
+                        <span class="border-block-1" style="width: 110px;"></span>
+                        <span class="border-block-2"></span>
+                        <h7 id="h7" class="service-title"
+                            style="font-size: 20px; font-family: Arial, Helvetica, sans-serif;">
+                            Airport/City Transfers
+                        </h7>
+                        <div>
+                            <img class="service-card-img" src="images/ATD.jpg" alt="" width="200px" height="150px">
+                            <div>
+                                We offer city and airport transfers in Sri Lanka from the Colombo International Airport to any location in the island
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="lsdvs">
+                        <span class="border-block-1" style="width: 118px;"></span>
+                        <span class="border-block-2"></span>
+                        <h7 id="h7" class="service-title"
+                            style="font-size: 20px; font-family: Arial, Helvetica, sans-serif;">
+                            Weddings and Events
+                        </h7>
+                        <div>
+                            <img class="service-card-img" src="images/WDD.jpg" alt="" width="200px" height="150px">
+                            <div>
+                                A fleet of luxury wedding cars in Sri Lanka, we are well geared for weddings and special occasions
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="lsdvs">
+                        <span class="border-block-1" style="width: 135px;"></span>
+                        <span class="border-block-2"></span>
+                        <h7 id="h7" class="service-title"
+                            style="font-size: 20px; font-family: Arial, Helvetica, sans-serif;">
+                            Optional Equipment
+                        </h7>
+                        <div>
+                            <img class="service-card-img" src="images/ASD.jpg" alt="" width="200px" height="150px">
+                            <div>
+                                We offer a wide range of optional equipment for those searching for a rent a car service in Sri Lanka
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="lsdvs">
+                        <span class="border-block-1" style="width: 115px;"></span>
+                        <span class="border-block-2"></span>
+                        <h7 id="h7" class="service-title"
+                            style="font-size: 20px; font-family: Arial, Helvetica, sans-serif;">
+                            Road Side Assistance
+                        </h7>
+                        <div>
+                            <img class="service-card-img" src="images/RSD.jpg" alt="" width="200px" height="150px">
+                            <div>
+                                We offer 24/7/365 roadside assistance islandwide with a team ready for action
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottomFooter">
+           <div>All copyrights reserved by FIREJET &#169; 2023</div>
+           <div>Term and conditions</div>
+           <div></div>
+        </div>
+    </main>
+</body>
+
+</html>

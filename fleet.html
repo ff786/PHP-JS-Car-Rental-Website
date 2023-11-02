@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vehicle Fleet</title>
+        
+        <link rel="stylesheet" href="styles/userstyles.css">
+        <link rel="stylesheet" href="styles/deneth_h.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    </head>
+    <body>
+        <div id="top">
+            <div class="logo">
+                <img src="images\logo.png" alt="" width="150" height="150">
+            </div>
+            <div class="sg">
+                <img src="images\prof.png" alt="" width="60" height="50">
+
+                <div id="d">
+                    <button id="loginButton" type="submit" style="width: 60px; height: 25px; border-radius: 5px; cursor: pointer; border: 1px solid black;">Login</button>
+					<button id="signupButton" type="submit" style="width: 60px; height: 25px; border-radius: 5px; cursor: pointer; border: 1px solid black;">Signup</button>
+				</div>
+
+            </div>
+
+			<script>
+				const loginButton = document.querySelector('#loginButton');
+				const signupButton = document.querySelector('#signupButton');
+			
+				loginButton.addEventListener('click', function() {
+					window.location.href = 'login.html'; // Corrected filename and path
+				});
+			
+				signupButton.addEventListener('click', function() {
+					window.location.href = '../Registration.html'; // Corrected path
+				});
+			</script>
+
+               <h1 class="h1">FIREJET</h1>
+               <h2 class="h2">Car Rental Service</h2>
+            
+        </div>
+    
+        <div class="topnav">
+            <div>
+                <li class="list"><a href="Home.html">Home</a></li>
+                <li class="list"><a href="fleet.html">Vehicle Fleet</a></li>
+                <li class="list"><a href="Servicepage.html">Services</a></li>
+                <li class="list"><a href="https://www.google.lk/">Rates</a></li>
+                <li class="list"><a href="contactus.html">Contact Us</a></li>
+            </div>
+            <div class="search-container">
+                <!--    <form action="/action_page.php">-->
+                    <input style="border: none;" type="text" placeholder="Search.." name="search">
+                        <div class="search-container-button">
+                            <button style="width: 40px; height: 40px; border: none; cursor: pointer;" type="submit"><i class="fa fa-search"></i></button>
+                        </div>
+                    <!--</form>-->    
+                </div>
+        </div>
+        <div class = "indent">
+			<h2>Vehicle Fleet Of FIREJET Rental Service</h2>
+			<p>We offer a wide range of Sri Lanka car hire facilities ranging from economy to luxury.
+			The fleet consists of cars, sports utility, and 4WD vehicles, vans and buses.
+			There is also a range of classic and vintage cars available for weddings, television, cinema, commercials and other special occasions.</p>
+		<div>	
+		<div class="bx">	
+			<div class = "sndbx">
+				<h3 align = "center"><b>LUXURY CARS</b></h3>
+				<img src="images\luxurycar.jpg" alt="LUXURY CAR" width="406" height="216">
+				<p>There is a brand new fleet of luxury cars for hire in Sri Lanka on offer.</p>
+				<button type="button" class = "buttonn">SELECT</button>
+			</div>
+				 
+			<div class = "sndbx">
+				<h3 align = "center"><b>PREMIUM CARS</b></h3>
+				<img src="images\premium.jpg" alt="Trulli" width="406" height="216">
+				<p>Select from a range of premium cars</p>
+				<button type="button" class = "buttonn">SELECT</button>
+			</div>
+			<div class = "sndbx">
+				<h3 align = "center"><b>GENERAL CARS</b></h3>
+				<img src="images\genaral.jpg" alt="LUXURY CAR" width="406" height="216">
+				<p>The general range includes recent models</p>
+				<button type="button" class = "buttonn">SELECT</button>
+			</div>
+			
+		</div>
+        <div class="bx">	
+			<div class = "sndbx">
+				<h3 align = "center"><b>BUSES, VANS AND MPV</b></h3>
+				<img src="images\van.jpg" alt="LUXURY CAR" width="406" height="216">
+				<p>Select from our range of economy and luxury vans</p>
+				<button type="button" class = "buttonn">SELECT</button>
+			</div>	
+			<div class = "sndbx">
+				<h3 align = "center"><b>4WD & SUV VEHICLES</b></h3>
+				<img src="images\suv.jpg" alt="Trulli" width="406" height="216">
+				<p>SUV and 4WD models, ideal for those looking to rent a car in Sri Lanka to explore the island’s scenic nature getaways.</p>
+				<button type="button" class = "buttonn">SELECT</button>
+			</div>
+			<div class = "sndbx">
+				<h3 align = "center"><b>CLASSIC AND VINTAGE</b></h3>
+				<img src="images\classic.jpg" alt="LUXURY CAR" width="406" height="216">
+				<p>Both “open top” convertibles and saloon type classic and 
+				vintage cars available for weddings, cinema, and television as well as other special occasions.</p>
+				<button type="button" class = "buttonn">SELECT</button>
+			</div>
+			
+		</div>
+
+        
+    </body>
+</html>

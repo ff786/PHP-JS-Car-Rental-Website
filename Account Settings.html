@@ -1,0 +1,121 @@
+<?php
+include 'user.php'
+include 'account.php'
+?>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Account Settings</title>
+        <link rel="stylesheet" href="styles/userstyles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    </head>
+    <body>
+        
+        <div id="top">
+            <div class="logo">
+                <img src="images/logo.png" alt="" width="150" height="150">
+            </div>
+            <div class="sg">
+                <img src="images/prof.png" alt="" width="60" height="50">
+                
+                <div id="d">
+                    <button id="logoutButton" type="submit" style="width: 60px; height: 25px; border-radius: 5px; cursor: pointer; border: 1px solid black;">Logout </button>
+                </div>
+            
+                <script>
+                    const logoutButton = document.querySelector('#logoutButton');
+                    //const signupButton = document.querySelector('#signupButton');
+                
+                    logoutButton.addEventListener('click', function() {
+                        window.location.href = '../Home.html'; // Corrected filename and path
+                    });
+                
+                    //signupButton.addEventListener('click', function() {
+                      //  window.location.href = '../Registration.html'; // Corrected path
+                    //});
+                </script>
+
+            </div>
+
+               <h1 class="h1">FIREJET</h1>
+               <h2 class="h2">Car Rental Service</h2>
+            
+        </div>
+    
+        <div class="topnav">
+            <div>
+                <li class="list"><a href="Home.html">Home</a></li>
+                <li class="list"><a href="https://www.google.lk/">Vehicle Fleet</a></li>
+                <li class="list"><a href="Servicepage.html">Services</a></li>
+                <li class="list"><a href="https://www.google.lk/">Rates</a></li>
+                <li class="list"><a href="contactus.html">Contact Us</a></li>
+            </div>
+            <div class="search-container">
+            <!--    <form action="/action_page.php">-->
+                <input style="border: none;" type="text" placeholder="Search.." name="search">
+                    <div class="search-container-button">
+                        <button style="width: 40px; height: 40px; border: none; cursor: pointer;" type="submit"><i class="fa fa-search"></i></button>
+                    </div>
+                <!--</form>-->    
+            </div>
+        </div>
+        
+        <div>
+            <h3>User Account</h3>
+        <!--    <div class="pagenav">
+                <ul>Home</ul>
+                <ul>User Account</ul>
+                <ul>Account Settings</ul>
+            </div> -->
+        </div>
+        
+        <hr id="hr1">
+
+        <div class="bx">
+            <div class="sidediv">
+
+                <div class="pght">
+
+                    <img src="images/prof.png" alt="" width="150" height="100">
+
+                </div>
+                <div class="listgrp">
+
+                        <div id="sln"><li><a href="./Account Settings.html"><b>Account</b></a></li></div>
+                        <div id="sln"><li><a href="./Password.html"><b>Password</b></a></li></div>
+                        <div id="sln"><li><a href="./Notifications.html"><b>Notification</b></a></li></div>
+
+                </div>    
+            </div>
+
+            <div class="sndbx">
+                <div style="
+                    border-radius: 20px;
+                    background-color: aliceblue;
+                    box-shadow: 0 10px 15px rgba(0,0,0,0.15);"><h6 id="h6">Account Settings</h6></div>
+                <form method="post">
+                <hr id="hr2">
+                <h7 class="h7" id="fullName">Full Name : <?php echo $fullName; ?></h7>      
+                <hr id="hr3">
+                <h7 class="h7" id="email">Email : <?php echo $email; ?></h7>
+                <hr id="hr4">
+                <h7 class="h7" id="mobile">Mobile : <?php echo $mobile; ?></h7> 
+                <hr id="hr4">
+                <h7 class="h7" id="address">Address : <?php echo $address; ?></h7>
+                <hr id="hr4">
+                <?php
+
+                <br/>
+                <div style="margin-left: 30px;">
+                    <button name="submit" type="submit">Update Details</button>
+            
+                </div>
+                </form>
+                <br/>
+            </div>
+        </div>
+        <script src="js/acoount.js"></script>
+    </body>
+</html>
